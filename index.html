@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Welcome to My Site</title>
+  <meta charset="UTF-8">
+  <title>David Olejniczak Resume</title>
+  <style>
+    body, html { margin: 0; height: 100%; }
+    .pdf-container { width: 100%; height: 100%; }
+  </style>
 </head>
 <body>
-  <h1>Hello, I’m <your-name>!</h1>
-  <p>Welcome to my personal site.</p>
+
+  <h1>David Olejniczak Resume</h1>
+
+  <!-- 1) Using <embed> -->
+  <embed
+    src="David_Olejniczak_Resume.pdf"
+    type="application/pdf"
+    class="pdf-container"
+  />
+
+  <!-- 2) Using <object> (fallback link if unsupported) -->
+  <!--
+  <object
+    data="David_Olejniczak_Resume.pdf"
+    type="application/pdf"
+    class="pdf-container"
+  >
+    <p>Your browser doesn’t support embedded PDFs.
+       <a href="path/to/your-file.pdf" target="_blank">Download the PDF</a>
+    </p>
+  </object>
+  -->
+
 </body>
 </html>
